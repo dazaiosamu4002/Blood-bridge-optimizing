@@ -46,6 +46,7 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
+    <a class="navbar-brand" id="qq" href="/index.html" style="color:#F51A14;">Home Page</a>
       <a class="navbar-brand" id="qq" href="dashboard.php" style="color:#F51A14;">Blood Bank & Donation Admin Panel</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
