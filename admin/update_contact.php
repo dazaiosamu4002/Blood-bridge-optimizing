@@ -55,7 +55,7 @@ $active="contact";
         $number=$_POST['email'];
         $email=$_POST['contactno'];
         //$conn=mysqli_connect("localhost","root","","blood_bank_database") or die("Connection error");
-        $conn=mysqli_connect("bloodbank.c3qqg6c0q2ew.ap-south-1.rds.amazonaws.com","admin","Aashin2101","blood_bank_database") or die("Connection error");
+        $conn=mysqli_connect("blood-bank-database.c3qqg6c0q2ew.ap-south-1.rds.amazonaws.com","admin","Aashin2101","blood_bank_database") or die("Connection error");
         $sql= "update contact_info set contact_address='{$address}', contact_mail='{$email}', contact_phone='{$number}' where contact_id='1'";
         $result=mysqli_query($conn,$sql) or die("query unsuccessful.");
       echo '<div class="alert alert-success"><b>Contact Details Updated Successfully.</b></div>';

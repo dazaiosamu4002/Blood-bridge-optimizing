@@ -20,7 +20,7 @@ $number=$_POST['contactno'];
 $email=$_POST['email'];
 $message=$_POST['message'];
 //$conn=mysqli_connect("localhost","root","","blood_bank_database") or die("Connection error");
-$conn=mysqli_connect("bloodbank.c3qqg6c0q2ew.ap-south-1.rds.amazonaws.com","admin","Aashin2101","blood_bank_database") or die("Connection error");
+$conn=mysqli_connect("blood-bank-database.c3qqg6c0q2ew.ap-south-1.rds.amazonaws.com","admin","Aashin2101","blood_bank_database") or die("Connection error");
 $sql= "insert into contact_query (query_name,query_mail,query_number,query_message) values('{$name}','{$number}','{$email}','{$message}')";
 $result=mysqli_query($conn,$sql) or die("query unsuccessful.");
   echo '<div class="alert alert-success alert_dismissible"><b><button type="button" class="close" data-dismiss="alert">&times;</button></b><b>Query Sent, We will contact you shortly. </b></div>';

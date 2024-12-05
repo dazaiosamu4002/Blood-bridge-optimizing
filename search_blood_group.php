@@ -2,7 +2,7 @@
 
 $bg=$_POST['blood'];
 //$conn=mysqli_connect("localhost","root","","blood_bank_database") or die("Connection error");
-$conn=mysqli_connect("bloodbank.c3qqg6c0q2ew.ap-south-1.rds.amazonaws.com","admin","Aashin2101","blood_bank_database") or die("Connection error");
+$conn=mysqli_connect("blood-bank-database.c3qqg6c0q2ew.ap-south-1.rds.amazonaws.com","admin","Aashin2101","blood_bank_database") or die("Connection error");
 $sql= "select * from donor_details where donor_blood='{$bg}' order by rand() limit 5";
 $result=mysqli_query($conn,$sql) or die("query unsuccessful.");
   if(mysqli_num_rows($result)>0)   {
