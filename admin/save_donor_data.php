@@ -12,6 +12,6 @@ $conn=mysqli_connect("bloodbank.c3qqg6c0q2ew.ap-south-1.rds.amazonaws.com","admi
 $sql= "INSERT INTO donor_details(donor_name,donor_number,donor_mail,donor_age,donor_gender,donor_blood,donor_address) values('{$name}','{$number}','{$email}','{$age}','{$gender}','{$blood_group}','{$address}')";
 $result=mysqli_query($conn,$sql) or die("query unsuccessful.");
 //header("Location: http://localhost/BDMS/admin/donor_list.php");
-header("Location: http://65.1.108.39/BDMS/admin/donor_list.php");
+header("Location: http://13.233.199.209/BDMS/admin/donor_list.php");
 mysqli_close($conn);
  ?>

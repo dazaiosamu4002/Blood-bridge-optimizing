@@ -12,6 +12,6 @@ $sql= "INSERT INTO donor_details(donor_name,donor_number,donor_mail,donor_age,do
 $result=mysqli_query($conn,$sql) or die("query unsuccessful.");
 
 //header("Location: http://localhost/BDMS/home.php");
-header("Location: http://65.1.108.39/BDMS/home.php");
+header("Location: http://13.233.199.209/BDMS/home.php");
 mysqli_close($conn);
  ?>
